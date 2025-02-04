@@ -29,3 +29,22 @@ export default function Greet({name,lastName,children}:GreetProps){
       </Greet>
       <Greet name="APJCR" lastName="Patil"/>
 ```
+
+### Renderning List
+
+```
+function MyList() {
+
+    const names=["APJ","APJCR","JADHVA"];
+    //map in seprate line as best practice
+    const namesList=names.map((name)=> <h2>{name}</h2>);
+
+  return (
+    <div>
+        {
+            namesList
+        }
+    </div>
+  )
+}
+```
